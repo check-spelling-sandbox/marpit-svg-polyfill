@@ -34,7 +34,7 @@ The polyfill for [the inline SVG slide][inline-svg] rendered by [Marpit].
 
 ### WebKit
 
-[Marpit]'s [inline SVG slide][inline-svg] has a lot of advantages: No requires JavaScript, gives better performance for scaling, and has predicatable DOM structure.
+[Marpit]'s [inline SVG slide][inline-svg] has a lot of advantages: No requires JavaScript, gives better performance for scaling, and has predictable DOM structure.
 
 But unfortunately, WebKit browser has not scaled the wrapped HTML correctly. It is caused by a long-standing [bug 23113](https://bugs.webkit.org/show_bug.cgi?id=23113), and it does not resolved in the last 15 years.
 
