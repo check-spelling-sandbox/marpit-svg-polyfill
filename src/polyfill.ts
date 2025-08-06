@@ -63,7 +63,7 @@ export function observe(target: ParentNode = document): () => void {
  *
  * Including polyfills in the returned array are simply determined by the kind of
  * browser. If you want detailed polyfills that were passed accurate feature
- * detections, call asyncronous version by `polyfills().then()` or
+ * detections, call asynchronous version by `polyfills().then()` or
  * `await polyfills()`.
  *
  * ```js
