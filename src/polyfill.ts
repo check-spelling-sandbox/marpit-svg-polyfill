@@ -155,7 +155,7 @@ export function webkit(
     (svg) => {
       if (!svg.style.transform) svg.style.transform = 'translateZ(0)'
 
-      // Safari 16.3 and eariler versions had applied the current scale factor
+      // Safari 16.3 and earlier versions had applied the current scale factor
       // of the view to `currentScale` property. In others, it becomes `1` as
       // long as not set the custom scale to SVG element.
       const zoomFactor = zoom || zoomFactorFromParent || svg.currentScale || 1
