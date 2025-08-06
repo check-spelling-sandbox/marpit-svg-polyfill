@@ -77,7 +77,7 @@ marpit-svg-polyfill uses the result of `getScreenCTM()` method, so the polyfill 
 
 WebKit browser would not trigger repainting even if modified the contents of slide. It becomes a problem when supporting the live preview feature in Marp tools.
 
-Fortunately, [a genius already resolved this problem only in CSS!](https://stackoverflow.com/a/21947628) `transform:translateZ(0)` would trigger re-painting immidiately when modified contents.
+Fortunately, [a genius already resolved this problem only in CSS!](https://stackoverflow.com/a/21947628) `transform:translateZ(0)` would trigger re-painting immediately when modified contents.
 
 #### Animation GIF
 
