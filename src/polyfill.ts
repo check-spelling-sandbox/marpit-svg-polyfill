@@ -11,7 +11,7 @@ export type PolyfillOption = {
 }
 
 export const observerSymbol = Symbol()
-export const zoomFactorRecieverSymbol = Symbol()
+export const zoomFactorReceiverSymbol = Symbol()
 
 /**
  * Start observing DOM to apply polyfills.
@@ -121,8 +121,8 @@ export function webkit(
   const target = (typeof opts === 'object' && opts.target) || document
   const zoom = typeof opts === 'object' ? opts.zoom : opts
 
-  if (!window[zoomFactorRecieverSymbol]) {
-    Object.defineProperty(window, zoomFactorRecieverSymbol, {
+  if (!window[zoomFactorReceiverSymbol]) {
+    Object.defineProperty(window, zoomFactorReceiverSymbol, {
       configurable: true,
       value: true,
     })
