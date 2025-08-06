@@ -70,7 +70,7 @@ describe('Marpit SVG polyfill', () => {
     })
 
     describe('Different target', () => {
-      it('availables observation for different target', async () => {
+      it('available observation for different target', async () => {
         vendor.mockImplementation(() => 'Apple Computer, Inc.')
 
         const element = document.createElement('div')
